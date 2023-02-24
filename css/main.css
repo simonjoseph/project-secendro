@@ -1,104 +1,5 @@
 @charset "UTF-8";
-/*------------------------------------------------------------------
-  [Master Stylesheet]
 
-  Project:    Schon
-  Version:    1.0
-  Primary use:  HTML Template for Schon
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-
-1. import files
-2. Body
-3. Wrapper / #wrapper
-3. Mt Header / #mt-header
-4. Mt Top Bar / .mt-top-bar
-4. Main / #main
-5. Mt Bottom Bar / .mt-bottom-bar
-5. Mt Error Section / .mt-error-sec
-6. Nav / #nav
-6. Mt Newsletter Popup / .mt-newsletter-popup
-7. Popup Holder / .popup-holder
-7. Mt Nav Holder / .mt-nav-holder
-8. Fancybox Skin / .fancybox-skin
-8. Mt Side Over / .mt-side-over
-9. Mt Map Holder / .mt-map-holder
-10. Mt Map Descrp / .mt-map-descrp
-11. Mt Contact Detial / .mt-contact-detial
-12. Mt Form Section / .mt-form-sec
-13. Mt Contact Banner / .mt-contact-banner
-14. Mt About Section / .mt-about-sec
-15. Mt Team Section / .mt-team-sec
-16. Mt Workspace Section / .mt-workspace-sec
-17. Mt Process Section / .mt-process-sec
-18. Mt seller Section / .mt-seller-sec
-19. Mt Heading / .mt-heading
-20. Mt Heading2 / .mt-heading2
-21. Mt Patners / .mt-patners
-23. Mt Product1 / .mt-product1
-24. Mt Product2 / .mt-product2
-25. product-3 / .product-3
-26. Mt product4 / .mt-product4
-27. Product Area / .product-area
-28. Mt Producttabs / .mt-producttabs
-29. Mt Bestseller / .mt-bestseller
-30. Mt Smallproducts / .mt-smallproducts
-31. Mt Productsc / .mt-productsc
-32. Mt Productscrollbar / .mt-productscrollbar
-33. js tab hidden / .js-tab-hidden
-34. Mt Detail Section / .mt-detail-sec
-35. Mt Product Table / .mt-product-table
-36. product detail ab / .product-detail-tab
-37. product comment / .product-comment
-38. related products / .related-products
-39. mt shoplist header / .mt-shoplist-header
-40. Mt productlisthold / .mt-productlisthold
-41. Mt pagination / .mt-pagination
-42. product post / .product-post
-43. banner frame / .banner-frame
-44. banner 1 / .banner-1
-45. Baners / .banner-2
-46. banner 2 / .banner-2
-47. banner 3 / .banner-3
-48. banner 4 / .banner-4
-49. banner 5 / .banner-5
-50. banner 6 / .banner-6
-51. banner 7 / .banner-7
-52. banner 8 / .banner-8
-53. banner 9 / .banner-9
-54. banner 12 / .banner-12
-55. banner 13 / .banner-13
-56. banner 15 / .banner-15
-57. banner 17 / .banner-17
-58. banner 18 / .banner-18
-59. banner 19 / .banner-19
-60. banner 20 / .banner-20
-61. banner 21 / .banner-21
-62. Mt Blog Detail / .mt-blog-detail
-63. Mt Blog Post / .mt-blog-post
-64. Btn Holder / .btn-holder
-65. Widget / .widget
-66. Mt Author Box / .mt-author-box
-67. Mt Comments Section / .mt-comments-section
-68. Post Blog / .post-blog
-69. Loading Holder / .loading-holder
-70. Blog Isotops / #blog-isotops
-71. Mt Footer / #mt-footer
-72. Mt Footer / #mt-footer
-73. Sidebar / #sidebar
-74. Shop Widget / .shop-widget
-75. Nice Form / .nice-form
-76. Mt Main Slider / .mt-main-slider
-77. Mt Mainslider2 / .mt-mainslider2
-78. Mt Mainslider3 / .mt-mainslider3
-79. Mt Mainslider4 / .mt-mainslider4
-80. Slider 1 / .slider-1
-81. Slider 3 / .slider-3
-82. Slider 5 / .slider-5
-83. Slider 7 / .slider-7
-84. Coming Soon
-
--------------------------------------------------------------------*/
 .mt-product1 .links, .mt-product2 .links, .product-3 .color-box, .product-3 .links {
   margin: 0;
   padding: 0;
@@ -142,6 +43,7 @@
   vertical-align: top;
  }
 } */
+
 .ellipsis {
   white-space: nowrap;
   /* 1 */
@@ -3055,6 +2957,7 @@ a:hover {
   margin: 0 0 35px;
   font-weight: 700;
   color: #575757;
+  text-align: center;
 }
 
 #mt-footer .footer-holder .f-widget-heading.heading {
@@ -3402,7 +3305,7 @@ a:hover {
 }
 
 #mt-footer .f-widget-tabs .tabs li {
-  float: left;
+  /* float: left; */
   margin: 0 3px 6px 0;
 }
 
@@ -9530,6 +9433,12 @@ a:hover {
   position: relative;
 }
 
+.img-holder-product{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
 .blog-post .blog-txt {
   float: left;
   overflow: hidden;
@@ -9725,6 +9634,267 @@ a:hover {
 .blog-post .img-block .img a:hover .fa {
   opacity: 1;
   visibility: visible;
+}
+
+/*Product itens*/
+/*** 
+=============================================
+    Blog Style1 Area Css
+=============================================
+***/
+.blog-style1-area {
+  position: relative;
+  display: block;
+  background: #fff;
+  /* background: #e0e0e0; */
+  padding: 50px 0 70px;
+  z-index: 1;
+}
+
+.blog-style1-area .thm-shape1 {
+  position: absolute;
+  top: 120px;
+  right: 10%;
+}
+
+.single-blog-style1 {
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.single-blog-style1 .img-holder {
+  position: relative;
+  display: block;
+}
+
+.single-blog-style1 .img-holder .inner {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.single-blog-style1 .img-holder .inner:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transform: perspective(400px) rotateX(-90deg);
+  -ms-transform: perspective(400px) rotateX(-90deg);
+  transform: perspective(400px) rotateX(-90deg);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  z-index: 1;
+}
+
+.single-blog-style1:hover .img-holder .inner:before {
+  opacity: .65;
+  -webkit-transform: perspective(400px) rotateX(0deg);
+  -ms-transform: perspective(400px) rotateX(0deg);
+  transform: perspective(400px) rotateX(0deg);
+}
+
+.single-blog-style1 .img-holder .overlay-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-transition: .9s;
+  -o-transition: .9s;
+  transition: .9s;
+  transform: perspective(400px) scaleY(0);
+  transform-origin: bottom;
+}
+
+.single-blog-style1:hover .img-holder .overlay-icon {
+  transform: perspective(400px) scaleY(1.0);
+}
+
+.single-blog-style1 .img-holder .overlay-icon a {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.single-blog-style1 .img-holder .overlay-icon span {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.single-blog-style1 .img-holder .inner:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.10;
+  background: #000;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: 1;
+}
+
+.single-blog-style1:hover .img-holder .inner:after {
+  opacity: 0.35;
+  transform: scaleY(1.0);
+}
+
+.single-blog-style1 .img-holder img {
+  width: 100%;
+  transition: all 200ms linear;
+  transition-delay: 0.1s;
+}
+
+.single-blog-style1:hover .img-holder img {
+  transform: scale(1.2);
+  transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+}
+
+.single-blog-style1 .img-holder .date-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background: var(--thm-color-3);
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.single-blog-style1 .img-holder .date-box.style2 {
+  background: var(--thm-color-2);
+}
+
+.single-blog-style1 .img-holder .date-box.style3 {
+  background: var(--thm-color-4);
+}
+
+.single-blog-style1 .img-holder .date-box h2 {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.single-blog-style1 .img-holder .date-box p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.single-blog-style1 .text-holder {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  padding: 50px 40px 38px;
+  box-shadow: 0px 5px 24px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid transparent;
+  transition: all 200ms linear;
+  transition-delay: 0.1s;
+}
+
+.single-blog-style1:hover .text-holder {
+  box-shadow: none;
+  border-color: #e3e9f4;
+}
+
+.single-blog-style1 .text-holder .blog-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  text-transform: none;
+}
+
+.single-blog-style1 .text-holder .blog-title a {
+  color: #222222;
+  transition: all 200ms linear;
+  transition-delay: 0.1s;
+}
+
+.single-blog-style1 .text-holder .blog-title a:hover {
+  color: var(--thm-primary);
+}
+
+.single-blog-style1 .text-holder .text {
+  position: relative;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 32px;
+}
+
+.single-blog-style1 .text-holder .text p {
+  margin: 0;
+}
+
+
+.single-blog-style1 .text-holder .meta-info {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #e3e9f4;
+  padding-top: 23px;
+}
+
+.single-blog-style1 .text-holder .meta-info li {
+  position: relative;
+  display: block;
+  color: #222222;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.single-blog-style1 .text-holder .meta-info li i {
+  position: relative;
+  display: inline-block;
+  padding-right: 5px;
+  color: var(--thm-primary);
+}
+
+.single-blog-style1 .text-holder .meta-info li a {
+  color: #222222;
+  transition: all 200ms linear;
+  transition-delay: 0.1s;
+}
+
+.single-blog-style1 .text-holder .meta-info li a:hover {
+  color: var(--thm-primary);
 }
 
 /*------------------------------------------------------------------
@@ -11284,7 +11454,7 @@ a:hover {
   margin: 0 0 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #383838;
+  color: #fff;
 }
 
 .mt-contact-banner .breadcrumbs {
@@ -11292,7 +11462,7 @@ a:hover {
   line-height: 16px;
   font-weight: 200;
   overflow: hidden;
-  color: #383838;
+  color: #fff;
 }
 
 .mt-contact-banner .breadcrumbs ul {
@@ -11309,7 +11479,7 @@ a:hover {
   -webkit-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  color: #383838;
+  color: #fff;
 }
 
 .mt-contact-banner .breadcrumbs ul a:hover {
